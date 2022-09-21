@@ -1,0 +1,7 @@
+function [ result ] = factorial( toNum )
+    
+for i = 1:toNum
+        
+    end
+end
+

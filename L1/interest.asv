@@ -1,0 +1,7 @@
+function [] = interest(rate, threshold)
+%INTEREST Summary of this function goes here
+%   Detailed explanation goes here
+
+
+end
+

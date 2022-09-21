@@ -1,0 +1,4 @@
+function [ solutions ] = ex3_2( input_args )
+    
+end
+
