@@ -8,3 +8,6 @@ disp(ex4_1(-5));
 disp(ex4_2(5));
 disp(ex4_2(-5));
 disp(ex4_2(20));
+
+
+disp(ex4_3(250));

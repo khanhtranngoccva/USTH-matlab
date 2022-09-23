@@ -22,9 +22,9 @@ disp(tCol);
 s = sum([1:3:100]);
 disp(s);
 
-disp(syms(2, 5));
+syms f(x, y);
+f(x, y) = x + y;
 
-n = 200;
-k = null ;
-disp(symsum(1/k - 1/(1 + k), k, 1, n));
-symsum
+a = 1;
+b = 2;
+f(1, 2);

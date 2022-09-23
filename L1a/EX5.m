@@ -25,6 +25,14 @@ end
 disp(s3 * 4);
 
 
+s4 = 0;
+p4 = (pi ^ 2 - 8) / 16;
+for i = 1:2:5000
+    s4 = s4 + 1 / (i ^ 2 * (i + 2) ^ 2);
+end
+disp(s4 - p4);
+
+
 combination = @(n, k) factorial(n) / factorial(k) / factorial(n - k);
 disp(combination(10, 2));
 
