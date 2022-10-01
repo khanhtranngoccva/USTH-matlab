@@ -23,6 +23,7 @@ function [root,fx,ea,iter]=bisect(func,xl,xu,es,maxit)
     while (1)
         xrold = xr;
         xr = (xl + xu)/2;
+        disp(double(xr));
         iter = iter + 1;
         if xr ~= 0,ea = abs((xr - xrold)/xr) * 100;end
         test = func(xl)*func(xr);

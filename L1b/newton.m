@@ -1,4 +1,4 @@
-function [root, fx, error] = newton(f, startingPoint, es, maxIt)
+function [root, fx, error, iter] = newton(f, startingPoint, es, maxIt)
     syms dF(x);
     dF(x) = diff(sym(f));
     disp(dF);
@@ -14,6 +14,7 @@ function [root, fx, error] = newton(f, startingPoint, es, maxIt)
         iter = iter + 1;
         prevRoot = root;
         root = root - f(root) / dF(root);
+        disp(double(root));
         error = abs((root - prevRoot) / root);
         if (error <= es || iter >= maxIt)
             break;

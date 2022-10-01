@@ -1,9 +1,11 @@
+
 clc;
 clear all;
-close all;
 
-f1 = @(x) x ^ 3 + x + 3;
-syms dF1(x);
-dF1(x) = diff(sym(f1));
+format long;
 
-dF1(0);
+y = @(x) 5 * x ^ 3 - 5 * x ^ 2 + 6 * x - 2;
+
+
+[root, fx, ea, iter] = bisect(y, 0, 2, 0, 4);
+root;
