@@ -8,9 +8,8 @@
 %   2, 1 by default.
 %   verbose: Allows verbose logging of the process.
 % Output:
-%   root: The approximate root.
-%   fx: Evaluation of function after last iteration.
-%   error: Evaluation of function after last iteration.
+%   result: Approximate result for the system of equations.
+%   error: Relative error of the final iteration.
 %   iter: The numbers of iterations executed.
 function [result, error, iter] = jacobi(matrix, constants, tolerance, maxIterations, relaxParam, verbose)
     if nargin < 4 || isempty(maxIterations)

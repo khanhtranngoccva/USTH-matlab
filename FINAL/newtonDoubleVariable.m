@@ -10,7 +10,7 @@
 % Output:
 %   root: The approximate 2-coordinate root.
 %   eval: Evaluation of function after last iteration.
-%   error: The relative error after last evaluation.
+%   relativeError: The relative error after last evaluation.
 %   iterations: The numbers of iterations executed.
 function [result, eval, relativeError, iterations] = newtonDoubleVariable(funcs, startingPoint, tolerance, maxIterations, verbose)
     if nargin < 3 || isempty(tolerance)
