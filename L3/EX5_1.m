@@ -19,3 +19,5 @@ A \ b
 mldivide(A, b)
 
 GaussPivot(A, b)
+
+gradient
