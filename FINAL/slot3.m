@@ -26,3 +26,5 @@ gaussSeidel(A, b, 1, 0.000000005, 1, true);
 % y = repmat(x, 1)
 % y(1) = 2
 % x
+
+cumtrapz
